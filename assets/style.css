@@ -1,0 +1,31 @@
+body
+{
+  margin: auto;
+  background-color: blue;
+  background-image: url("https://i.imgur.com/erRMMIU.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lobster",Times;
+  display: flow-root;
+}
+
+
+header
+{
+  padding: 0;
+  background-color: #5DBCD2;
+  opacity: 0.9;
+  display: flex;
+  width: 100%;
+}
+h1
+{
+  font-size: 2em;
+  color: #eee5e9;
+  padding-left: 3em;
+}
+#Logo
+{
+  height: 10em;
+  width: 10em;
+}
