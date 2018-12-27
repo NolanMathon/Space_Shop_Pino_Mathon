@@ -10,39 +10,76 @@ body
   background-size: cover;
 }
 
+#Logo {
+  height: 10em;
+  width: 10em;
+}
+
 header {
   opacity: 0.9;
   width: 100%;
   background-image: url("https://i.imgur.com/erRMMIU.jpg");
 }
 
+#header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
 #header form {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin: 50px;
 }
 
 #header form input {
   font-size: 18px;
   padding: 11px;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-right: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  margin-right: 0px;
+}
+
+#header form input:hover, #header form input:focus, #header form input:active {
+  border: 1px solid #6699ff;
+  border-right: none;
 }
 
 #header button {
   font-size: 18px;
   padding: 11px;
   background-color: #6699ff;
-  border: 1px solid black;
-  border-left-width: 0px;
+  border: 1px solid #6699ff;
+  border-left: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 #header button:hover {
   background-color: #1a66ff;
+  border: 1px solid #1a66ff;
+  border-left: none;
+}
+
+#panier .normal_screen {
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 2em;
+}
+
+#panier .normal_screen i {
+  font-size: 2em;
+  color: white;
+}
+
+#panier .phone_screen {
+  display: none;
 }
 
 #menu .afficher_menu {
@@ -93,29 +130,44 @@ header {
 }
 
 /* Menu en responsive design */
-@media screen and (max-width : 600px){
+@media screen and (max-width : 650px)
+{
+  #Logo {
+    height: 5em;
+    width: 5em;
+  }
 
-    #menu ul {
-        position: static;
-        display: none;
-    }
+  #panier .normal_screen {
+    display: none;
+  }
 
-    /*Create vertical spacing*/
-    #menu li {
-        margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    #menu ul li, #menu li a {
-        width: 100%;
-    }
+  #panier .phone_screen {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
 
-    #menu ul li a {
-      padding: 14px 0px;
-    }
+  #menu ul {
+      position: static;
+      display: none;
+  }
 
-    #menu .afficher_menu {
-        display:block;
-    }
+  #menu li {
+      margin-bottom: 1px;
+  }
+
+  #menu ul li, #menu li a {
+      width: 100%;
+  }
+
+  #menu ul li a {
+    padding: 14px 0px;
+  }
+
+  #menu .afficher_menu {
+      display:block;
+  }
 }
 
 body h1 {
@@ -130,7 +182,35 @@ body h2 {
   padding-left: 3em;
 }
 
-#Logo {
-  height: 10em;
-  width: 10em;
+@media screen and (max-width : 420px)
+{
+  #Logo {
+    height: 5em;
+    width: 0em;
+  }
+}
+
+@media screen and (min-width : 700px)
+{
+  #header #formulaire {
+    width: 50%;
+  }
+
+  #header form input {
+    width: 80%
+  }
+}
+
+@media screen and (min-width : 930px)
+{
+  #header form input {
+    width: 85%
+  }
+}
+
+@media screen and (min-width : 1400px)
+{
+  #header form input {
+    width: 90%
+  }
 }
