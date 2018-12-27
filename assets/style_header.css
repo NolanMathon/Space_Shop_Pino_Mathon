@@ -1,0 +1,232 @@
+#Logo {
+  height: 10em;
+  width: 10em;
+}
+
+header {
+  opacity: 0.9;
+  width: 100%;
+  background-image: url("imgs/header.gif");
+  background-size: cover;
+}
+
+#header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#header form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#header form input {
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid white;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: 0px;
+}
+
+#header form input:hover, #header form input:focus, #header form input:active {
+  border: 1px solid #6699ff;
+  border-right: none;
+}
+
+#header button {
+  font-size: 18px;
+  padding: 11px;
+  background-color: #6699ff;
+  border: 1px solid #6699ff;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#header button:hover {
+  background-color: #1a66ff;
+  border: 1px solid #1a66ff;
+  border-left: none;
+}
+
+#panier .normal_screen {
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 2em;
+}
+
+#panier .normal_screen i {
+  font-size: 1.2em;
+  color: white;
+}
+
+#panier .phone_screen {
+  display: none;
+}
+
+#menu .afficher_menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    background: #6699ff;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+#menu .droite {
+  float: right;
+}
+
+#menu .afficher_menu:hover {
+  background-color: #1a66ff;
+}
+
+#menu input[type=checkbox]{
+    display: none;
+}
+
+#menu input[type=checkbox]:checked ~ #menu_ul{
+    display: block;
+}
+
+#menu {
+  background-color: #333;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#menu ul li {
+  display: inline;
+  float: left;
+}
+
+#menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  background-color: #111;
+}
+
+/* Menu en responsive design */
+@media screen and (max-width : 650px)
+{
+  #Logo {
+    height: 5em;
+    width: 5em;
+  }
+
+  #panier .normal_screen {
+    display: none;
+  }
+
+  #panier .phone_screen {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+
+  #menu ul {
+      position: static;
+      display: none;
+  }
+
+  #menu li {
+      margin-bottom: 1px;
+  }
+
+  #menu ul li, #menu li a {
+      width: 100%;
+  }
+
+  #menu ul li a {
+    padding: 14px 0px;
+  }
+
+  #menu .afficher_menu {
+      display:block;
+  }
+}
+
+body h1 {
+  font-size: 2em;
+  color: #eee5e9;
+  padding-left: 3em;
+}
+
+body h2 {
+  font-size: 2em;
+  color: #eee5e9;
+  padding-left: 3em;
+}
+
+@media screen and (max-width : 420px)
+{
+  #Logo {
+    height: 5em;
+    width: 0em;
+  }
+}
+
+@media screen and (min-width : 700px)
+{
+  #header #formulaire {
+    width: 50%;
+  }
+
+  #header form input {
+    width: 80%
+  }
+}
+
+@media screen and (min-width : 930px)
+{
+  #header form input {
+    width: 85%
+  }
+}
+
+@media screen and (min-width : 1400px)
+{
+  #header form input {
+    width: 90%
+  }
+}
+
+@media screen and (max-width : 330px)
+{
+  #header {
+    margin-left: 0%;
+  }
+  #header #formulaire {
+    width: 60vw;
+  }
+
+  #header form input {
+    width: 25vw;
+  }
+
+  #header form button {
+    width: 15vw;
+  }
+}

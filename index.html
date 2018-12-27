@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style_header.css">
+    <link rel="stylesheet" type="text/css" href="assets/style_footer.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
@@ -19,17 +21,20 @@
           </form>
         </div>
         <div id="panier">
-          <a class="normal_screen" href="panier.html"><i class="fa fa-shopping-cart"></i> Panier</a>
-          <a class="phone_screen" href="panier.html"><i class="fa fa-shopping-cart"></i></a>
+          <a class="normal_screen" href="panier.html"><i class="fa fa-shopping-basket"></i> Panier</a>
+          <a class="phone_screen" href="panier.html"><i class="fa fa-shopping-basket"></i></a>
         </div>
       </div>
       <div id="menu">
         <label for="afficher_menu" class="afficher_menu"><i class="fa fa-bars"></i></label>
         <input type="checkbox" id="afficher_menu" role="button">
         <ul id="menu_ul">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="promotions.html">Promotions</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html"><i class="fa fa-home"></i> Accueil</a></li>
+          <!-- We can also use percent for promotions -->
+          <li><a href="promotions.html"><i class="fa fa-barcode"></i> Promotions</a></li>
+          <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+          <li class="droite"><a href="inscription.html"><i class="fa fa-user-plus"></i> Inscription</a></li>
+          <li class="droite"><a href="connection.html"><i class="fa fa-user"></i> Connection</a></li>
         </ul>
       </div>
     </header>
@@ -38,7 +43,13 @@
         <h2>Soldes</h2>
       </section>
 
+      <div class="clear" style="clear:both"></div>
     <footer>
+      <ul id="footer">
+        <li>IUT Lyon 1 - Département Informatique</li>
+        <li>Copyright © Tous droits réservé par Pino Maxime & Mathon Nolan</li>
+        <li>Projet proposé par M. Champin</li>
+      </ul>
     </footer>
   </body>
 </html>
