@@ -214,3 +214,21 @@ body h2 {
     width: 90%
   }
 }
+
+@media screen and (max-width : 330px)
+{
+  #header {
+    margin-left: 0%;
+  }
+  #header #formulaire {
+    width: 60vw;
+  }
+
+  #header form input {
+    width: 25vw;
+  }
+
+  #header form button {
+    width: 15vw;
+  }
+}
