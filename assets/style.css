@@ -1,21 +1,48 @@
 body
 {
   margin: auto;
-  background-color: blue;
-  background-image: url("https://i.imgur.com/erRMMIU.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   font-family: "Fjalla One",Times;
-  display: flow-root;
 }
 
+#body {
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 header {
-  padding: 0;
-  background-color: #5DBCD2;
   opacity: 0.9;
-  display: flex;
   width: 100%;
+  background-image: url("https://i.imgur.com/erRMMIU.jpg");
+}
+
+#header form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 50px;
+}
+
+#header form input {
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid black;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#header button {
+  font-size: 18px;
+  padding: 11px;
+  background-color: #6699ff;
+  border: 1px solid black;
+  border-left-width: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#header button:hover {
+  background-color: #1a66ff;
 }
 
 header ul {
