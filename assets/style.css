@@ -18,7 +18,13 @@ header
   display: flex;
   width: 100%;
 }
-h1
+body h1
+{
+  font-size: 2em;
+  color: #eee5e9;
+  padding-left: 3em;
+}
+body h2
 {
   font-size: 2em;
   color: #eee5e9;
