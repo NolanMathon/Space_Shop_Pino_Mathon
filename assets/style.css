@@ -18,7 +18,8 @@ body
 header {
   opacity: 0.9;
   width: 100%;
-  background-image: url("https://i.imgur.com/erRMMIU.jpg");
+  background-image: url("imgs/header.gif");
+  background-size: cover;
 }
 
 #header {
