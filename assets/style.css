@@ -5,33 +5,57 @@ body
   background-image: url("https://i.imgur.com/erRMMIU.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Lobster",Times;
+  font-family: "Fjalla One",Times;
   display: flow-root;
 }
 
 
-header
-{
+header {
   padding: 0;
   background-color: #5DBCD2;
   opacity: 0.9;
   display: flex;
   width: 100%;
 }
-body h1
-{
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header ul li {
+  display: inline;
+  float: left;
+}
+
+header ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  background-color: #111;
+}
+
+body h1 {
   font-size: 2em;
   color: #eee5e9;
   padding-left: 3em;
 }
-body h2
-{
+
+body h2 {
   font-size: 2em;
   color: #eee5e9;
   padding-left: 3em;
 }
-#Logo
-{
+
+#Logo {
   height: 10em;
   width: 10em;
 }
