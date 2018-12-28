@@ -168,17 +168,7 @@ header {
   }
 }
 
-body h1 {
-  font-size: 2em;
-  color: #eee5e9;
-  padding-left: 3em;
-}
 
-body h2 {
-  font-size: 2em;
-  color: #eee5e9;
-  padding-left: 3em;
-}
 
 @media screen and (max-width : 420px)
 {

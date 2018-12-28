@@ -7,7 +7,68 @@ body {
   font-family: "Fjalla One",Times;
 }
 
+body h1 {
+  font-size: 2em;
+  color: #eee5e9;
+
+}
+
+body h2 {
+  font-size: 2em;
+  color: #eee5e9;
+
+}
+
+a
+{
+  text-decoration: none;
+}
+
 #body {
   background-color: pink;
   height: 50vh;
+  overflow: auto;
+}
+
+.box
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15em;
+  height: 9em;
+  margin: 2em;
+  opacity: 0.9;
+  border : 5px solid #322;
+  border-radius: 5%;
+  flex-direction: column;
+  background-color: #333;
+}
+
+.line :hover
+{
+  opacity: 0.6;
+}
+
+.box h1
+{
+  font-size: 1em;
+}
+.box h2
+{
+  font-size: 0.7em;
+
+}
+
+.line
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.img_box
+{
+  height: 4em;
+  width: 4em;
 }
