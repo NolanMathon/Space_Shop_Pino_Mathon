@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Paiement</title>
+  </head>
+  <body>
+    <div id="form_paiement">
+      <h1>Sélectionnez un mode de paiement</h1>
+      <input type="radio" id="cb" name="payement" value="cb"><label for="cb">Carte Bleue ▼</label><br>
+      <div id="carte_bleue">
+        <form action="validation.html">
+          <input id="card_owner"  type="text" name="card_owner" placeholder="Nom du titulaire de la carte" required>
+          <input id="card_number"  type="text" name="card_number" placeholder="Numéro de carte" required>
+          <input id="card_cvv"  type="text" name="card_cvv" placeholder="CVV" required>
+          <label for="expiration_date">Date d'expiration</label>
+          <select name="expiration_date" id="expiration_date">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select name="expiration_date" id="expiration_date">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+          <button>Confirmer</button>
+        </form>
+      </div>
+      <input type="radio" id="paypal" name="payement" value="paypal"><label for="paypal">Paypal ▼</label><br>
+      <div id="paypal_paiement">
+        <form action="validation.html">
+          <input id="card_number"  type="text" name="card_number" placeholder="Numéro de carte" required>
+          <input id="card_owner"  type="text" name="card_owner" placeholder="Nom du titulaire de la carte"  required>
+          <input id="card_cvv"  type="text" name="card_cvv" placeholder="CVV" required>
+          <button>Confirmer</button>
+        </form>
+      </div>
+      <input type="radio" id="puce" name="payement" value="puce"><label for="puce">Puce intracorporel ▼</label>
+      <div id="puce_paiement">
+        <form action="validation.html">
+          <input id="puce_owner"  type="text" name="puce_owner" placeholder="Nom du titulaire de la puce" required>
+          <input id="puce_number"  type="text" name="puce_number" placeholder="Numéro de série de la puce" required>
+          <input id="puce_code"  type="text" name="card_code" placeholder="Code secret de la puce" required>
+          <button>Confirmer</button>
+        </form>
+      </div>
+      <p><a href="index.html">Annuler</a></p>
+    </div>
+  </body>
+</html>

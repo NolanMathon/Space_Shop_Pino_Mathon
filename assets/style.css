@@ -10,28 +10,24 @@ body {
 body h1 {
   font-size: 2em;
   color: #eee5e9;
-
 }
 
 body h2 {
   font-size: 2em;
   color: #eee5e9;
-
 }
 
-a
-{
+a {
   text-decoration: none;
 }
 
 #body {
-  background-color: pink;
+  background-color: #e8e5d6;
   height: 50vh;
   overflow: auto;
 }
 
-.box
-{
+.box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,30 +41,48 @@ a
   background-color: #333;
 }
 
-.line :hover
-{
+.line :hover {
   opacity: 0.6;
 }
 
-.box h1
-{
+.box h1 {
   font-size: 1em;
 }
-.box h2
-{
-  font-size: 0.7em;
 
+.box h2 {
+  font-size: 0.7em;
 }
 
-.line
-{
+.line {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
 }
-.img_box
-{
+
+.img_box {
   height: 4em;
   width: 4em;
+}
+
+/* Style pour la page paiement.html */
+
+#carte_bleue, #paypal_paiement, #puce_paiement {
+  display: none;
+}
+
+#form_paiement input[type=radio]{
+    display: none;
+}
+
+#cb:checked ~ #carte_bleue{
+    display: block;
+}
+
+#paypal:checked ~ #paypal_paiement{
+    display: block;
+}
+
+#puce:checked ~ #puce_paiement{
+    display: block;
 }
