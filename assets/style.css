@@ -41,6 +41,20 @@ a {
   background-color: #333;
 }
 
+.box_accueil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25em;
+  height: 15em;
+  margin: 2em;
+  opacity: 0.9;
+  border : 5px solid #322;
+  border-radius: 5%;
+  flex-direction: column;
+  background-color: #333;
+}
+
 .line :hover {
   opacity: 0.6;
 }
@@ -67,12 +81,16 @@ a {
 
 /* Style pour la page paiement.html */
 
-#carte_bleue, #paypal_paiement, #puce_paiement {
-  display: none;
+#form_paiement label{
+  font-size: 25pt;
 }
 
 #form_paiement input[type=radio]{
     display: none;
+}
+
+#carte_bleue, #paypal_paiement, #puce_paiement {
+  display: none;
 }
 
 #cb:checked ~ #carte_bleue{
