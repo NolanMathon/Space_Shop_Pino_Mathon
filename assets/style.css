@@ -24,6 +24,8 @@ a {
 p {
   font-size: 0.7em;
   color: black;
+  text-align: justify;
+  text-align: center;
 }
 
 #body {
@@ -206,6 +208,9 @@ p {
   .description {
     order: 1;
   }
+  .commentaire {
+    width: 300px;
+  }
 }
 
 .other{
@@ -232,6 +237,7 @@ p {
 }
 
 .achat {
+  margin-left: 5px;
   padding: 2px;
   display: flex;
   justify-content: center;
@@ -254,5 +260,29 @@ p {
 
 }
 .button_achat:hover {
+  opacity: 0.9;
+}
+
+.commentaire {
+  resize: none;
+  width: 650px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: #d8d4c3;
+  border : 5px solid #322;
+}
+
+.button_submit {
+  border : 1px solid #322;
+  border-radius: 15%;
+  background-color: #333;
+  color:#e9e5e4;
+  font-size: 1.5em;
+  margin: 5px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.button_submit:hover {
   opacity: 0.9;
 }
