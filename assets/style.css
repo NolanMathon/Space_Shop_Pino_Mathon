@@ -21,12 +21,69 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 0.7em;
+  color: black;
+}
+
 #body {
   background-color: #e8e5d6;
   height: 50vh;
   overflow: auto;
 }
 
+/*Style pour texte promotions*/
+
+.barre {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  color: #eee5e9;
+}
+
+.box_promo h3 {
+  font-size: 1em;
+  color: red;
+  border: 2px solid red;
+  border-radius: 100%;
+  padding: 5px;
+}
+.promo {
+  display: flex;
+  align-self: flex-start;
+
+}
+.box_promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15em;
+  height: 9em;
+  margin: 2em;
+  opacity: 0.9;
+  border : 5px solid #322;
+  border-radius: 5%;
+  background-color: #333;
+}
+
+.in_box_promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2px;
+}
+
+
+.box_promo h1 {
+  font-size: 1em;
+}
+
+.box_promo h2 {
+  font-size: 0.7em;
+}
+
+
+/* Style pour les box produits */
 .box {
   display: flex;
   align-items: center;
@@ -79,6 +136,20 @@ a {
   width: 4em;
 }
 
+/* Style pour la box filtre */
+
+.filtre_box {
+  border: 2px solid #322;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #eee5e9;
+  background-color: #333;
+  border-radius: 2%;
+  padding: 2px;
+  margin: 1em;
+}
+
 /* Style pour la page paiement.html */
 
 #form_paiement label{
@@ -103,4 +174,79 @@ a {
 
 #puce:checked ~ #puce_paiement{
     display: block;
+}
+
+/* Style pour pages produits */
+
+.body_produit h1 {
+  color: black;
+}
+
+
+.body_produit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+
+}
+
+@media screen and (max-width : 650px) {
+  .other {
+    flex-direction: column;
+
+  }
+  .description {
+    order: 1;
+  }
+}
+
+.other{
+  display: flex;
+
+}
+
+.big_image {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 20em;
+  width: 20em;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 2em;
+  color: black;
+  font-size: 2em;
+
+}
+
+.achat {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  border : 5px solid #322;
+  border-radius: 5%;
+  background-color: #333;
+
+}
+.button_achat {
+  border : 1px solid #ff6600;
+  border-radius: 5%;
+  background-color: #ff6600;
+  color: #eee5e9;
+  margin: 5px;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+#a_panier {
+  display: flex;
+  justify-content: center;
+  align-self: center;  
 }
