@@ -3,6 +3,7 @@ html, body {
 }
 
 body {
+  background-color: #e8e5d6;
   margin: auto;
   font-family: "Fjalla One",Times;
 }
@@ -29,8 +30,6 @@ p {
 }
 
 #body {
-  background-color: #e8e5d6;
-  height: 50vh;
   overflow: auto;
 }
 
