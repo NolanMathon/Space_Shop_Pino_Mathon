@@ -73,6 +73,9 @@ p {
   margin: 2px;
 }
 
+.box_promo:hover {
+  opacity: 0.6;
+}
 
 .box_promo h1 {
   font-size: 1em;
@@ -112,7 +115,11 @@ p {
   background-color: #333;
 }
 
-.line :hover {
+.box_accueil:hover {
+  opacity: 0.6;
+}
+
+.box:hover {
   opacity: 0.6;
 }
 
@@ -243,10 +250,9 @@ p {
   margin: 5px;
   font-size: 1.2em;
   font-weight: bolder;
-}
+  text-align: center;
 
-#a_panier {
-  display: flex;
-  justify-content: center;
-  align-self: center;  
+}
+.button_achat:hover {
+  opacity: 0.9;
 }
