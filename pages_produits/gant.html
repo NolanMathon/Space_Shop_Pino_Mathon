@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/style_header.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style_footer.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gant de l'Infini - SpaceShop</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <img id="Logo" src="../assets/imgs/logo.png" alt="Logo">
+        <div id="formulaire">
+          <form action="../test.html">
+            <input class="recherche" type="text" placeholder="Recherche"/>
+            <button><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div id="panier">
+          <a class="normal_screen" href="../panier.html"><i class="fa fa-shopping-basket"></i> Panier</a>
+          <a class="phone_screen" href="../panier.html"><i class="fa fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <div id="menu">
+        <label for="afficher_menu" class="afficher_menu"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="afficher_menu" role="button">
+        <ul id="menu_ul">
+          <li><a href="../index.html"><i class="fa fa-home"></i> Accueil</a></li>
+          <!-- We can also use percent for promotions -->
+          <li><a href="../voyage.html"><i class="fa fa-rocket"></i> Voyages</a></li>
+          <li><a href="../produits.html"><i class="fa fa-book"></i> Produits</a></li>
+          <li><a href="../promotions.html"><i class="fa fa-barcode"></i> Promotions</a></li>
+          <li><a href="../contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+          <li class="droite"><a href="../inscription.html"><i class="fa fa-user-plus"></i> Inscription</a></li>
+          <li class="droite"><a href="../connection.html"><i class="fa fa-user"></i> Connection</a></li>
+        </ul>
+      </div>
+    </header>
+
+      <section id="body">
+        <div class="body_produit">
+
+          <h1>Gant de l'Infini</h1>
+          <div class="other">
+            <img class="big_image" src="../assets/imgs/gant.png" alt="Gant de l'Infini">
+
+            <div class="description">
+              <p>
+                Claque des doigts pour te teleporter, faire la vaisselle, bruler une planete ou tuer la moitier de la population universelle. Attention ne doit pas être plongé dans l'eau. Pierres vendues séparément.
+              </p>
+            </div>
+
+            <div class="achat">
+              <h2>9 999 999,99€</h2>
+              <div class="promo_div">
+                <h3 class="promo">-50%</h3>
+              </div>
+              <h4 class="barre">19 999 999,99€</h4>
+              <a href="../panier.html" class="button_achat"><i class="fa fa-cart-arrow-down"></i></a>
+
+            </div>
+          </div>
+          <h1>Espace Commentaire</h1>
+          <textarea class="commentaire" name="Commentaire"></textarea>
+          <button class="button_submit">Envoyer</button>
+
+        </div>
+
+      </section>
+
+      <div class="clear" style="clear:both"></div>
+    <footer>
+      <ul id="footer">
+        <li>IUT Lyon 1 - Département Informatique</li>
+        <li>Copyright © Tous droits réservé par Pino Maxime & Mathon Nolan</li>
+        <li>Projet proposé par M. Champin</li>
+      </ul>
+    </footer>
+    </body>
+    </html>
