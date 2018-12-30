@@ -33,15 +33,24 @@ p {
   overflow: auto;
 }
 
+#bienvenue {
+   display: flex;
+   width: 30%;
+}
+
+
 /*Style pour texte promotions*/
 
 .barre {
   text-decoration: line-through;
   text-decoration-color: red;
   color: #eee5e9;
+  display: flex;
+  justify-content: center;
 }
 
-.box_promo h3 {
+
+.promo {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -50,10 +59,7 @@ p {
   border: 2px solid red;
   border-radius: 100%;
   padding: 5px;
-}
-.promo {
-  display: flex;
-  align-self: flex-start;
+  margin: 0;
 
 }
 .box_promo {
@@ -67,6 +73,12 @@ p {
   border : 5px solid #322;
   border-radius: 5%;
   background-color: #333;
+}
+
+.promo_div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .in_box_promo {
@@ -121,6 +133,15 @@ p {
 
 .box_accueil:hover {
   opacity: 0.6;
+}
+
+.box_accueil h1, .box_accueil h2 {
+  margin: 3px 0 3px 0;
+}
+
+.box_accueil h3 {
+  font-size: 1em;
+  color: #eee5e9;
 }
 
 .box:hover {
