@@ -42,6 +42,9 @@ p {
 }
 
 .box_promo h3 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   font-size: 1em;
   color: red;
   border: 2px solid red;
@@ -163,52 +166,7 @@ p {
 #connection_form h1 {
   text-align: center;
   font-variant: small-caps;
-  color: #ffffff;
-}
-
-#connection_form {
-  width: 35%;
-  height: 40%;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 25px;
-  border-radius: 10px;
-}
-
-#connection_form .connection_box {
-  border-radius: 3px;
-  border: 1px solid white;
-  width: 95%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding-left: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  font-size: 100%;
-  margin-bottom: 5%;
-}
-
-#connection_form .connection_box:hover {
-  border: 1px solid #6699ff;
-}
-
-#connection_form .connection_button {
-  font-size: 10pt;
-  background-color: #6699ff;
-  border-radius: 3px;
-  border: none;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-#connection_form .connection_button:hover {
-  background-color: #1a66ff;
-  border: 1px solid #1a66ff;
+  color: #1a66ff;
 }
 
 #connection_form p, #connection_form a {
@@ -216,28 +174,53 @@ p {
   font-variant: small-caps;
   text-align: center;
   text-decoration: none;
+  color: #1a66ff;
+}
+
+#connection_form {
+  width: 35%;
+  height: 40%;
+  margin: auto;
+  padding: 25px;
+}
+
+#connection_form .connection_box {
+  border-radius: 3px;
+  border: 1px solid #6699ff;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 100%;
+  margin-bottom: 5%;
+}
+
+#connection_form .connection_box:hover {
+  border: 1px solid #1a66ff;
+}
+
+#connection_form .connection_button {
+  background-color: #6699ff;
+  border-radius: 3px;
+  border: none;
   color: white;
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 25%
 }
 
-@media screen and (min-width: 880px)
-{
-  #connection_form {
-    height: 37%;
-  }
+#connection_form .connection_button:hover {
+  background-color: #1a66ff;
+  border: 1px solid #1a66ff;
 }
 
-@media screen and (min-width: 1200px)
-{
-  #connection_form {
-    height: 42%;
-  }
-}
-
-@media screen and (min-width: 1420px)
-{
-  #connection_form {
-    height: 50%;
-  }
+#connection_form input[type=radio] {
+  margin-bottom: 5%;
 }
 
 /* Style pour la page paiement.html */
@@ -319,7 +302,9 @@ p {
 
 .achat {
   margin-left: 5px;
+  margin-right: 5px;
   padding: 2px;
+  min-width: 200px;
   display: flex;
   justify-content: center;
   align-self: center;
