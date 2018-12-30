@@ -204,9 +204,29 @@ p {
   padding-bottom: 2%;
   font-size: 100%;
   margin-bottom: 5%;
+  font-family: "Fjalla One",Times;
 }
 
 #custom_form .custom_form_box:hover {
+  border: 1px solid #1a66ff;
+}
+
+#custom_form .message {
+  border-radius: 3px;
+  border: 1px solid #6699ff;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 100%;
+  margin-bottom: 5%;
+  resize: vertical;
+  font-family: "Fjalla One",Times;
+}
+
+#custom_form .message:hover {
   border: 1px solid #1a66ff;
 }
 
@@ -468,4 +488,35 @@ p {
   text-align: center;
   text-decoration: none;
   color: #1a66ff;
+}
+
+/* Style page contact.html */
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#contact #who_are_we {
+  margin: auto;
+  width: 50%;
+}
+
+#contact #who_are_we h1{
+  text-align: center;
+  font-variant: small-caps;
+  color: #1a66ff;
+}
+
+#contact #who_are_we p, #contact #who_are_we a {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#contact #who_are_we a {
+  color: #6699ff;
+  text-decoration: underline;
 }
