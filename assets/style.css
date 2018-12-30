@@ -264,7 +264,7 @@ p {
   font-family: "Fjalla One",Times;
 }
 
-#custom_form  .paiement_label {
+#custom_form .paiement_label {
   font-size: 15pt;
   margin: auto;
 }
@@ -387,7 +387,7 @@ p {
   opacity: 0.9;
 }
 
-/* Style page check paiement */
+/* Style page check_paiement.html */
 
 #verif {
   color: #6699ff;
@@ -399,4 +399,73 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+/* Style page validation.html */
+
+#validation_page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#validation_page h1 {
+  color: black;
+  text-align: center;
+}
+
+#validation_page p {
+  font-size: 12pt;
+}
+
+#validation_page .custom_modif_button {
+  background-color: black;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#validation_page .custom_modif_button:hover {
+  opacity: 0.7;
+}
+
+#gauche, #droite {
+  border: 1px solid black;
+  padding: 2%;
+}
+
+#validation_end {
+  width: 300px;
+  margin: auto;
+  padding: 25px;
+}
+
+#validation_end .custom_validation_button {
+  background-color: #6699ff;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#validation_end .custom_validation_button:hover {
+  background-color: #1a66ff;
+}
+
+#validation_end p, #validation_end a {
+  font-size: 20px;
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: none;
+  color: #1a66ff;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Paiement - SpaceShop</title>
+  </head>
+  <body>
+    <div id="custom_form">
+      <img id="status" src="assets/imgs/validation.png" alt="status">
+    </div>
+    <div id="validation_page">
+      <div id="gauche">
+        <h1>Adresse de livraison</h1><br>
+        <p>M. Champin Pierre-Antoine</p>
+        <p>Adresse : 25 avenue du Web</p>
+        <p>Planète : Pluton</p>
+        <p>Ville : Tataouine</p>
+        <p>Région : Web Plaine</p>
+        <p>Code Postal : 91 557</p>
+        <button onclick="location.href='livraison.html'" class="custom_modif_button"><i class="fa fa-map"></i> Modifier</button>
+      </div>
+      <div id="droite">
+        <h1>Moyen de paiement</h1><br>
+        <p>Carte bleue</p>
+        <p>Nom : Champin Pierre-Antoire</p>
+        <p>Numéro : XXXX XXXX XXXX 2019</p>
+        <p>CVV : 243</p>
+        <button onclick="location.href='paiement.html'" class="custom_modif_button"><i class="fa fa-credit-card"></i> Modifier</button>
+      </div>
+    </div>
+    <div id="validation_end">
+      <button  onclick="location.href='achat_effectue.html'" class="custom_validation_button"><i class="fa fa-check"></i></button>
+      <p><a href="paiement.html">retour</a>  |  <a href="index.html">annuler</a></p>
+    </div>
+
+  </body>
+</html>
