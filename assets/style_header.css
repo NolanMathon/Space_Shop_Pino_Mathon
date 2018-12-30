@@ -6,7 +6,7 @@
 header {
   opacity: 0.9;
   width: 100%;
-  background-image: url("imgs/header.gif");
+  background-image: url('https://www.mathonn.fr/assets/imgs/header.gif');
   background-size: cover;
 }
 
