@@ -128,7 +128,7 @@ header {
 }
 
 /* Menu en responsive design */
-@media screen and (max-width : 650px)
+@media screen and (max-width : 840px)
 {
   #Logo {
     height: 5em;

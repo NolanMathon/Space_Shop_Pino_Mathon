@@ -158,6 +158,88 @@ p {
   margin: 1em;
 }
 
+/* Style pour les pages connection.html et inscription.html */
+
+#connection_form h1 {
+  text-align: center;
+  font-variant: small-caps;
+  color: #ffffff;
+}
+
+#connection_form {
+  width: 35%;
+  height: 40%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#connection_form .connection_box {
+  border-radius: 3px;
+  border: 1px solid white;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 100%;
+  margin-bottom: 5%;
+}
+
+#connection_form .connection_box:hover {
+  border: 1px solid #6699ff;
+}
+
+#connection_form .connection_button {
+  font-size: 10pt;
+  background-color: #6699ff;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#connection_form .connection_button:hover {
+  background-color: #1a66ff;
+  border: 1px solid #1a66ff;
+}
+
+#connection_form p, #connection_form a {
+  font-size: 15px;
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 880px)
+{
+  #connection_form {
+    height: 37%;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  #connection_form {
+    height: 42%;
+  }
+}
+
+@media screen and (min-width: 1420px)
+{
+  #connection_form {
+    height: 50%;
+  }
+}
+
 /* Style pour la page paiement.html */
 
 #form_paiement label{
