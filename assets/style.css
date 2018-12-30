@@ -311,9 +311,6 @@ p {
     order: 1;
   }
 
-  .commentaire {
-    width: 300px;
-  }
 }
 
 .other{
@@ -324,31 +321,32 @@ p {
   display: flex;
   justify-content: center;
   align-self: center;
-  height: 20em;
-  width: 20em;
+  width: 33%;
 }
 
 .description {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-left: 2em;
   color: black;
   font-size: 2em;
+  width: 33%;
 }
 
 .achat {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: auto;
   padding: 2px;
-  min-width: 200px;
   display: flex;
   justify-content: center;
   align-self: center;
   flex-direction: column;
   border : 5px solid #322;
-  border-radius: 5%;
   background-color: #333;
+}
+
+.achat h2 {
+  font-size: 20pt;
+  text-align: center;
 }
 
 .button_achat {
@@ -358,7 +356,6 @@ p {
   color: #eee5e9;
   margin: 5px;
   font-size: 1.2em;
-  font-weight: bolder;
   text-align: center;
 }
 
@@ -368,7 +365,7 @@ p {
 
 .commentaire {
   resize: none;
-  width: 650px;
+  width: 75%;
   height: 100px;
   margin-bottom: 10px;
   background-color: #d8d4c3;
@@ -377,7 +374,7 @@ p {
 
 .button_submit {
   border : 1px solid #322;
-  border-radius: 15%;
+  border-radius: 5%;
   background-color: #333;
   color:#e9e5e4;
   font-size: 1.5em;
