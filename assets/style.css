@@ -411,6 +411,10 @@ p {
   margin-bottom: 10px;
   background-color: #d8d4c3;
   border : 5px solid #322;
+  font-family: "Fjalla One",Times;
+  padding-left: 1%;
+  padding-top: 1%;
+  font-size: 100%;
 }
 
 .button_submit {
@@ -540,4 +544,70 @@ p {
 #contact #who_are_we a {
   color: #6699ff;
   text-decoration: underline;
+}
+
+/* Style page panier.html */
+
+#panier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#panier #articles_panier {
+  width: 59%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+#panier #commande_panier {
+  width: 40%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#panier #commande_panier #panier_total {
+  width: 100%;
+  height: auto;
+}
+
+#panier #commande_panier #panier_total .panier_livraison {
+  font-size: 10pt;
+  color: red;
+}
+
+#panier #commande_panier #panier_total .price {
+  font-size: 20pt;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+#panier #article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+#panier #article img {
+  width: 8em;
+  height: 8em;
+}
+
+#panier #article h2 {
+  text-align: center;
+  color: #ff6600;
+  font-size: 17pt;
+}
+
+#panier #article h3 {
+  text-align: center;
+  color: black;
+  font-size: 17pt;
+  border: 1px solid black;
+  padding: 2%;
 }
