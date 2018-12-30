@@ -18,8 +18,8 @@
           <input class="custom_form_box" type="text" placeholder="Nom du titulaire de la carte*" required>
           <input class="custom_form_box" type="text" placeholder="Numéro de carte*" required>
           <input class="custom_form_box" type="text" placeholder="CVV*" required>
-          <label for="expiration_date">Date d'expiration</label><br>
-          <select name="expiration_date" id="custom_form_select_expiration">
+          <label for="expiration_month">Date d'expiration</label><br>
+          <select name="expiration_month" class="custom_form_select_expiration" id="expiration_month">
             <option value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -33,7 +33,8 @@
             <option value="11">11</option>
             <option value="12">12</option>
           </select>
-          <select name="expiration_date" id="custom_form_select_expiration">
+          <label for="expiration_year"></label>
+          <select name="expiration_year" class="custom_form_select_expiration" id="expiration_year">
             <option value="2019">2019</option>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
@@ -52,7 +53,7 @@
       </div>
       <input class="custom_form_radio" type="radio" id="paypal" name="paiement" value="paypal"><label class="paiement_label" for="paypal"><i class="fa fa-cc-paypal"></i> Paypal ▼</label><br>
       <div id="paypal_paiement">
-        <a href="check_paiement.html"><img id="status" src="assets/imgs/paiement_paypal.png"  alt="status"></a>
+        <a href="check_paiement.html"><img src="assets/imgs/paiement_paypal.png"  alt="status"></a>
       </div>
       <input class="custom_form_radio" type="radio" id="puce" name="paiement" value="puce"><label class="paiement_label" for="puce"><i class="fa fa-microchip"></i> Puce intracorporel ▼</label>
       <div id="puce_paiement">

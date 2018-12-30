@@ -231,11 +231,11 @@ p {
     display: none;
 }
 
-#custom_form #status {
+#custom_form #status, #custom_form #paypal_paiement img {
   width: 100%;
 }
 
-#custom_form #custom_form_select {
+#custom_form .custom_form_select {
   border-radius: 3px;
   border: 1px solid #6699ff;
   width: 100%;
@@ -250,7 +250,7 @@ p {
   font-family: "Fjalla One",Times;
 }
 
-#custom_form #custom_form_select_expiration {
+#custom_form .custom_form_select_expiration {
   border-radius: 3px;
   border: 1px solid #6699ff;
   width: 49%;
