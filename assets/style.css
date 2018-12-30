@@ -161,30 +161,39 @@ p {
   margin: 1em;
 }
 
-/* Style pour les pages connection.html et inscription.html */
+/* Stylepour les formulaires des pages :
+      - connection.html
+      - inscription.html
+      - livraison.html
+      - paiement.html
+*/
 
-#connection_form h1 {
+#custom_form h1 {
   text-align: center;
   font-variant: small-caps;
   color: #1a66ff;
 }
 
-#connection_form p, #connection_form a {
-  font-size: 15px;
+#custom_form p, #custom_form a {
+  font-size: 20px;
   font-variant: small-caps;
   text-align: center;
   text-decoration: none;
   color: #1a66ff;
 }
 
-#connection_form {
-  width: 35%;
-  height: 40%;
+#custom_form .champs_obligatoires {
+  font-size: 15px;
+  color: red;
+}
+
+#custom_form {
+  width: 300px;
   margin: auto;
   padding: 25px;
 }
 
-#connection_form .connection_box {
+#custom_form .custom_form_box {
   border-radius: 3px;
   border: 1px solid #6699ff;
   width: 95%;
@@ -197,11 +206,11 @@ p {
   margin-bottom: 5%;
 }
 
-#connection_form .connection_box:hover {
+#custom_form .custom_form_box:hover {
   border: 1px solid #1a66ff;
 }
 
-#connection_form .connection_button {
+#custom_form .custom_form_button {
   background-color: #6699ff;
   border-radius: 3px;
   border: none;
@@ -214,27 +223,58 @@ p {
   margin-left: 25%
 }
 
-#connection_form .connection_button:hover {
+#custom_form .custom_form_button:hover {
   background-color: #1a66ff;
-  border: 1px solid #1a66ff;
 }
 
-#connection_form input[type=radio] {
+#custom_form .custom_form_radio{
+    display: none;
+}
+
+#custom_form #status {
+  width: 100%;
+}
+
+#custom_form #custom_form_select {
+  border-radius: 3px;
+  border: 1px solid #6699ff;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 100%;
   margin-bottom: 5%;
+  margin-top: 2%;
+  font-family: "Fjalla One",Times;
+}
+
+#custom_form #custom_form_select_expiration {
+  border-radius: 3px;
+  border: 1px solid #6699ff;
+  width: 49%;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 100%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  font-family: "Fjalla One",Times;
+}
+
+#custom_form  .paiement_label {
+  font-size: 15pt;
+  margin: auto;
 }
 
 /* Style pour la page paiement.html */
 
-#form_paiement label{
-  font-size: 25pt;
-}
-
-#form_paiement input[type=radio]{
-    display: none;
-}
-
 #carte_bleue, #paypal_paiement, #puce_paiement {
   display: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #cb:checked ~ #carte_bleue{
@@ -255,23 +295,22 @@ p {
   color: black;
 }
 
-
 .body_produit {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 5px;
-
 }
 
 @media screen and (max-width : 650px) {
   .other {
     flex-direction: column;
-
   }
+
   .description {
     order: 1;
   }
+
   .commentaire {
     width: 300px;
   }
@@ -279,7 +318,6 @@ p {
 
 .other{
   display: flex;
-
 }
 
 .big_image {
@@ -297,7 +335,6 @@ p {
   margin-left: 2em;
   color: black;
   font-size: 2em;
-
 }
 
 .achat {
@@ -312,8 +349,8 @@ p {
   border : 5px solid #322;
   border-radius: 5%;
   background-color: #333;
-
 }
+
 .button_achat {
   border : 1px solid #ff6600;
   border-radius: 5%;
@@ -323,8 +360,8 @@ p {
   font-size: 1.2em;
   font-weight: bolder;
   text-align: center;
-
 }
+
 .button_achat:hover {
   opacity: 0.9;
 }
@@ -351,4 +388,18 @@ p {
 
 .button_submit:hover {
   opacity: 0.9;
+}
+
+/* Style page check paiement */
+
+#verif {
+  color: #6699ff;
+  text-align: center;
+}
+
+#loader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

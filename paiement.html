@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Paiement</title>
+    <title>Paiement - SpaceShop</title>
   </head>
   <body>
-    <div id="form_paiement">
+    <div id="custom_form">
+      <img id="status" src="assets/imgs/paiement.png" alt="status">
       <h1>Sélectionnez un mode de paiement</h1>
-      <input type="radio" id="cb" name="payement" value="cb"><label for="cb"><i class="fa fa-credit-card"></i> Carte Bleue ▼</label><br>
+      <input class="custom_form_radio" type="radio" id="cb" name="paiement" value="cb"><label class="paiement_label" for="cb"><i class="fa fa-credit-card"></i> Carte Bleue ▼</label><br>
       <div id="carte_bleue">
-        <form action="validation.html">
-          <input id="card_owner" type="text" name="card_owner" placeholder="Nom du titulaire de la carte" required>
-          <input id="card_number" type="text" name="card_number" placeholder="Numéro de carte" required>
-          <input id="card_cvv" type="text" name="card_cvv" placeholder="CVV" required>
-          <label for="expiration_date">Date d'expiration</label>
-          <select name="expiration_date" id="expiration_date">
+        <form action="check_paiement.html">
+          <input class="custom_form_box" type="text" placeholder="Nom du titulaire de la carte*" required>
+          <input class="custom_form_box" type="text" placeholder="Numéro de carte*" required>
+          <input class="custom_form_box" type="text" placeholder="CVV*" required>
+          <label for="expiration_date">Date d'expiration</label><br>
+          <select name="expiration_date" id="custom_form_select_expiration">
             <option value="01">01</option>
             <option value="02">02</option>
             <option value="03">03</option>
@@ -32,7 +33,7 @@
             <option value="11">11</option>
             <option value="12">12</option>
           </select>
-          <select name="expiration_date" id="expiration_date">
+          <select name="expiration_date" id="custom_form_select_expiration">
             <option value="2019">2019</option>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
@@ -46,23 +47,24 @@
             <option value="2029">2029</option>
             <option value="2030">2030</option>
           </select>
-          <button>Confirmer</button>
+          <button class="custom_form_button"><i class="fa fa-check"></i></button>
         </form>
       </div>
-      <input type="radio" id="paypal" name="payement" value="paypal"><label for="paypal"><i class="fa fa-cc-paypal"></i> Paypal ▼</label><br>
+      <input class="custom_form_radio" type="radio" id="paypal" name="paiement" value="paypal"><label class="paiement_label" for="paypal"><i class="fa fa-cc-paypal"></i> Paypal ▼</label><br>
       <div id="paypal_paiement">
-        <i class="fa fa-paypal" href="validation.html"></i>
+        <a href="check_paiement.html"><img id="status" src="assets/imgs/paiement_paypal.png"  alt="status"></a>
       </div>
-      <input type="radio" id="puce" name="payement" value="puce"><label for="puce"><i class="fa fa-microchip"></i> Puce intracorporel ▼</label>
+      <input class="custom_form_radio" type="radio" id="puce" name="paiement" value="puce"><label class="paiement_label" for="puce"><i class="fa fa-microchip"></i> Puce intracorporel ▼</label>
       <div id="puce_paiement">
-        <form action="validation.html">
-          <input id="puce_owner"  type="text" name="puce_owner" placeholder="Nom du titulaire de la puce" required>
-          <input id="puce_number"  type="text" name="puce_number" placeholder="Numéro de série de la puce" required>
-          <input id="puce_code"  type="text" name="card_code" placeholder="Code secret de la puce" required>
-          <button>Confirmer</button>
+        <form action="check_paiement.html">
+          <input class="custom_form_box" id="puce_owner" type="text" placeholder="Nom du titulaire de la puce*" required>
+          <input class="custom_form_box" id="puce_number" type="text" placeholder="Numéro de série de la puce*" required>
+          <input class="custom_form_box" id="puce_code" type="text" placeholder="Code secret de la puce*" required>
+          <button class="custom_form_button"><i class="fa fa-check"></i></button>
         </form>
       </div>
-      <p><a href="index.html">Annuler</a></p>
+      <p class="champs_obligatoires">* Champs obligatoires</p>
+      <p><a href="livraison.html">retour</a>  |  <a href="index.html">annuler</a></p>
     </div>
   </body>
 </html>

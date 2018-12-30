@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Livraison - SpaceShop</title>
+  </head>
+  <body>
+      <div id="custom_form">
+        <form action="paiement.html">
+            <img id="status" src="assets/imgs/livraison.png" alt="status">
+            <h1>Adresse de livraison</h1>
+            <input class="custom_form_box" type="text" placeholder="Nom et prénom*" required>
+            <input class="custom_form_box" type="text" placeholder="Adresse ligne 1*" required>
+            <input class="custom_form_box" type="text" placeholder="Adresse ligne 2">
+            <input class="custom_form_box" type="text" placeholder="Ville*" required>
+            <input class="custom_form_box" type="text" placeholder="Région*" required>
+            <input class="custom_form_box" type="text" placeholder="Code Postal" required>
+            <label for="pays">Pays ou DOM-TOM</label>
+            <select name="pays" id="custom_form_select">
+              <option value="01">Allemagne</option>
+              <option value="02">Autriche</option>
+              <option value="03">Belgique</option>
+              <option value="04">Bulgarie</option>
+              <option value="05">Chypre</option>
+              <option value="06">Croatie</option>
+              <option value="07">Danemark</option>
+              <option value="08">Espagne</option>
+              <option value="09">Estonie</option>
+              <option value="10">Finlande</option>
+              <option value="11">France</option>
+              <option value="12">Grèce</option>
+              <option value="13">Hongrie</option>
+              <option value="14">Irlande</option>
+              <option value="15">Italie</option>
+              <option value="16">Lettonie</option>
+              <option value="17">Lituanie</option>
+              <option value="18">Luxembourg</option>
+              <option value="19">Malte</option>
+              <option value="20">Pays-Bas</option>
+              <option value="21">Pologne</option>
+              <option value="22">Portugal</option>
+              <option value="23">Royaume-Uni</option>
+              <option value="24">République Tchèque</option>
+              <option value="25">Roumanie</option>
+              <option value="26">Slovaquie</option>
+              <option value="27">Slovénie</option>
+              <option value="28">Suède</option>
+            </select>
+            <input class="custom_form_box" type="tel" placeholder="Numéro de téléphone" required>
+            <button class="custom_form_button"><i class="fa fa-check"></i></button>
+            <p class="champs_obligatoires">* Champs obligatoires</p>
+            <p><a href="panier.html">retour</a>  |  <a href="index.html">annuler</a></p>
+        </form>
+      </div>
+  </body>
+</html>

@@ -9,19 +9,20 @@
     <title>Inscription - SpaceShop</title>
   </head>
   <body>
-      <div id="connection_form">
+      <div id="custom_form">
         <form action="index.html">
             <h1>Inscrivez-vous</h1>
             <input type="radio" id="connection_radio" name="payement" value="mister"><label for="mister">Madame</label>
             <input type="radio" id="connection_radio" name="payement" value="miss"><label for="miss">Monsieur</label>
             <input type="radio" id="connection_radio" name="payement" value="nb"><label for="nb">Non-binaire</label>
-            <input class="connection_box" type="text" placeholder="Nom*" required>
-            <input class="connection_box" type="text" placeholder="Prénom*" required>
-            <input class="connection_box" type="email" placeholder="Adresse email*" required>
-            <input class="connection_box" type="password" placeholder="Mot de passe*" required>
-            <input class="connection_box" type="password" placeholder="Confirmation de mot de passe*" required>
-            <button class="connection_button"><i class="fa fa-check"></i></button>
-            <p><a href="index.html">Annuler</a></p>
+            <input class="custom_form_box" type="text" placeholder="Nom*" required>
+            <input class="custom_form_box" type="text" placeholder="Prénom*" required>
+            <input class="custom_form_box" type="email" placeholder="Adresse email*" required>
+            <input class="custom_form_box" type="password" placeholder="Mot de passe*" required>
+            <input class="custom_form_box" type="password" placeholder="Confirmation de mot de passe*" required>
+            <button class="custom_form_button"><i class="fa fa-check"></i></button>
+            <p class="champs_obligatoires">* Champs obligatoires</p>
+            <p><a href="index.html">annuler</a></p>
         </form>
       </div>
   </body>
